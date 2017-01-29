@@ -1,0 +1,41 @@
+/*contact page*/
+
+#contact-form{
+  ul{
+    margin-bottom: @rem-base;
+  }
+  li{
+    margin-bottom: @rem-base/2;
+  }
+}
+
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 @rem-base/2;
+  font-size: @rem-base - 4;
+  border: 1px solid @smoke;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: @rem-base/2 @rem-base*1.5;
+  color: @white;
+  font-size: @rem-base;
+  cursor: pointer;
+  background: @brand-primary;
+  border: 0 none;
+}

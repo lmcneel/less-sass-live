@@ -1,0 +1,11 @@
+/*footer*/
+
+footer {
+  padding: $rem-base*1.5 0;
+  clear: both;
+  color: $gray;
+  font-size: $rem-base/2 + 3;
+  text-align: center;
+  background: $oil;
+  border-top: 8px solid $brand-primary;
+}

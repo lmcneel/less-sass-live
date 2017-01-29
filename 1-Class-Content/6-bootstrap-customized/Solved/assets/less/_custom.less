@@ -1,0 +1,110 @@
+body{
+  background-image: url(../imgs/ignasi_pattern_s.png);
+}
+
+article, aside, .contact-form{
+  background:@white;
+}
+
+.wrap{
+  margin-bottom:80px;
+}
+
+/* Content styles*/
+.about-me-content, #portfolio-area, .contact-form{
+  /* Positioning */
+  margin-top: @padding-large-horizontal;
+  /* Box Model */
+  padding:@padding-base-horizontal;
+  width: 100%;
+  h1{
+    font-size:@font-size-h3;
+  }
+  p{
+    /* Box model */
+    padding-top:@padding-large-horizontal;
+    /* Typography */
+    font-size:@font-size-small;
+  }
+}
+
+#nate-image {
+
+  /* Positioning */
+  &:extend(.pull-left);
+  margin-right: @padding-large-horizontal;
+  margin-top: @padding-large-horizontal;
+
+  /* Box-model */
+  width: 200px;
+  height: 200px;
+
+}
+
+/* Connect with me*/
+
+#connect-with-me-area{
+  /* Positioning */
+  margin-top: @padding-large-horizontal;
+  /* Box-model */
+  padding: @padding-large-horizontal @padding-large-horizontal 43px;
+  width: 100%;
+  h2{
+    font-size:@font-size-h4;
+    font-weight:500;
+  }
+}
+
+#images {
+
+  /* Box-model */
+  padding-top: 15px;
+
+  /* Typography */
+  text-align: center;
+  .connect-with-me-photo {
+
+    /* Box-model */
+    height: 55px;
+    width: 55px;
+
+  }
+
+}
+
+/* Footer */
+
+.text-muted-footer {
+  /* Positioning */
+  margin-top: 15px;
+
+  /* Typography */
+  color: @white;
+  font-size:@font-size-small;
+
+}
+
+.two-toned-footer-color {
+
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+  /* Visual */
+  background-color: @brand-primary;
+
+}
+
+/* Portfolio */
+
+.port-imgs {
+
+  /* Positioning */
+  margin-bottom: 15px;
+  margin-right: 15px;
+
+  /* Box-model */
+  width: 233px;
+  height: 166px;
+
+}

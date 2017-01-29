@@ -1,0 +1,17 @@
+/* Positions */
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+
+/* Icon Placeholder */
+%growth-icon {
+  &:hover{
+    transition:transform ease 1s;
+    transform:scale(1.5);
+  }
+}
