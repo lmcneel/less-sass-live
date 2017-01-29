@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           style: "expanded"
         },
         files: {
-          'assets/css/style-sass.css' : 'assets/scss/style.scss'
+          'assets/css/style-sass.css' : 'assets/scss/style-sass.scss'
         }
       },
       dist: {
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
-          'assets/css/style-sass.min.css' : 'assets/scss/style.scss'
+          'assets/css/style-sass.min.css' : 'assets/scss/style-sass.scss'
         }
       }
     },
@@ -50,12 +50,11 @@ module.exports = function(grunt) {
     less:{
       dev: {
         options: {
-          paths: ['assets/less'],
           sourceMap: true,
           sourceMapFilename: "assets/css/style-less.css.map"
         },
         files: {
-          'assets/css/style-less.css': 'assets/css/style.less'
+          'assets/css/style-less.css': 'assets/less/style-less.less'
         }
       },
       dist: {
@@ -64,7 +63,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'assets/css/style-less.min.css': 'assets/css/style.less'
+          'assets/css/style-less.min.css': 'assets/css/style-less.less'
         }
       }
     },
@@ -72,15 +71,24 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: 'assets/scss/*.scss',
-        tasks: ['sass:dev']
+        tasks: ['sass:dev'],
+        options: {
+          atBegin: true
+        }
       },
       compass: {
         files: 'assets/scss/*.scss',
-        tasks: ['compass:dev']
+        tasks: ['compass:dev'],
+        options: {
+          atBegin: true
+        }
       },
       less: {
         files: 'assets/less/*.less',
-        tasks: ['less:dev']
+        tasks: ['less:dev'],
+        options: {
+          atBegin: true
+        }
       }
     }
 
@@ -99,10 +107,10 @@ module.exports = function(grunt) {
   // so grunt.registerTask('watch',...); translates to `grunt watch` in command line
   // The second argument in registerTask is an array that refers to tasks set up in the initConfig
   // example and are the commands that will be ran when the task is called in comand line
-  // Feel free to change the default task to the flavor of processor you use the most
   //grunt.registerTask('default', );
   grunt.registerTask('default', ['watch:sass']);
   grunt.registerTask('wsass', ['watch:sass']);
   grunt.registerTask('wcompass', ['watch:compass']);
   grunt.registerTask('wless', ['watch:less']);
+
 };
