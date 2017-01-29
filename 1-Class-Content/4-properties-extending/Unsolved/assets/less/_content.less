@@ -1,0 +1,84 @@
+/*sidebar*/
+
+.sidebar {
+  padding: @rem-base*1.5;
+  width: 100%;
+  max-width: 270px;
+  float: right;
+  margin-bottom: @rem-base;
+  background: @white;
+  border: 1px solid @smoke;
+}
+
+h3, .sidebar h2 {
+  padding-bottom: @rem-base;
+  margin-bottom: @rem-base*.75;
+  line-height: @rem-base*1.25;
+  border-bottom: 2px solid @smoke;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: @rem-base/2;
+  margin-right: @rem-base/2.5;
+  &:last-child{
+    margin-right:0;
+  }
+}
+
+/*main*/
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  padding: @rem-base*1.5;
+  margin: 0 0 @rem-base*2 0;
+  width: 100%;
+  max-width: 650px;
+  float: left;
+  background: @white;
+  border: 1px solid @smoke;
+}
+
+
+/*portfolio page*/
+
+.work {
+  position: relative;
+  width: 274px;
+  overflow: auto;
+  float: left;
+  margin: @rem-base 0 @rem-base*1.5;
+  &:nth-child(even){
+    margin-right: @rem-base*2;
+  }
+  img{
+    width: 100%;
+    border: 0 none;
+    opacity: .8;
+  }
+  h3{
+    position: absolute;
+    bottom: @rem-base;
+    margin-bottom: 0;
+    padding: @rem-base;
+    width: 100%;
+    color: @white;
+    text-align: center;
+    line-height: @rem-base*1.5;
+    font-weight: 300;
+    background: @brand-primary;
+    border-bottom: 0;
+  }
+}
+
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: @rem-base/2;
+  margin-right: @rem-base*1.5;
+  float: left;
+}

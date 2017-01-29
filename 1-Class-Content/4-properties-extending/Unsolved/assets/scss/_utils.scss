@@ -1,0 +1,16 @@
+.thumbnail{
+  border: {
+    style: solid;
+    width: 1px;
+    color: $black;
+    left: {
+      width: 2px;
+      color: $oil;
+    }
+    right: {
+      width: 4px;
+      color: $gray;
+    }
+  }
+  padding:$rem-base/2;
+}

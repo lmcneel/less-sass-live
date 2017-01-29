@@ -1,0 +1,336 @@
+/* Import reset css */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Import variabes/settings */
+/* Site Variables */
+/* Import custom styles*/
+/* Global Styles */
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777777;
+  line-height: 36px;
+  background: url("../images/concrete_seamless.png");
+}
+* {
+  box-sizing: border-box;
+}
+/* General */
+.container {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+/* Header styles */
+h1,
+h2,
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4AAAA5;
+  font-weight: 700;
+}
+h1 {
+  padding-bottom: 18px;
+  font-size: 36px;
+  line-height: 45px;
+  border-bottom: 3px solid #444444;
+}
+h2,
+h3 {
+  font-size: 22.5px;
+}
+/*contact page*/
+#contact-form ul {
+  margin-bottom: 18px;
+}
+#contact-form li {
+  margin-bottom: 9px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 9px;
+  font-size: 14px;
+  border: 1px solid #C3C3C3;
+}
+textarea {
+  height: 200px;
+}
+input[type=submit] {
+  padding: 9px 27px;
+  color: #FAFAFA;
+  font-size: 18px;
+  cursor: pointer;
+  background: #4AAAA5;
+  border: 0 none;
+}
+/*header*/
+#masthead {
+  position: fixed;
+  z-index: 99;
+  margin: 0 0 27px;
+  overflow: auto;
+  width: 100%;
+  color: #FAFAFA;
+  background: #FAFAFA;
+  border-bottom: 2px solid #C3C3C3;
+}
+#logo {
+  width: 250px;
+  height: 90px;
+  float: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  text-align: center;
+  line-height: 90px;
+  color: #FAFAFA;
+  font-weight: 700;
+  font-size: 27px;
+  text-decoration: none;
+  background: #4AAAA5;
+}
+nav {
+  float: right;
+  margin-top: 22.5px;
+}
+nav a {
+  display: inline-block;
+  margin-left: 18px;
+  padding-left: 18px;
+  color: #444444;
+  text-decoration: none;
+  line-height: 18px;
+  border-left: 1px solid #C3C3C3;
+}
+nav a:first-child {
+  border-left: 0 none;
+}
+/*footer*/
+footer {
+  padding: 27px 0;
+  clear: both;
+  color: #777777;
+  font-size: 12px;
+  text-align: center;
+  background: #444444;
+  border-top: 8px solid #4AAAA5;
+}
+/*sidebar*/
+.sidebar {
+  padding: 27px;
+  width: 100%;
+  max-width: 270px;
+  float: right;
+  margin-bottom: 18px;
+  background: #FAFAFA;
+  border: 1px solid #C3C3C3;
+}
+h3,
+.sidebar h2 {
+  padding-bottom: 18px;
+  margin-bottom: 13.5px;
+  line-height: 22.5px;
+  border-bottom: 2px solid #C3C3C3;
+}
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 9px;
+  margin-right: 7.2px;
+}
+.social:last-child {
+  margin-right: 0;
+}
+/*main*/
+#main-container {
+  padding-top: 130px;
+}
+.main-section {
+  padding: 27px;
+  margin: 0 0 36px 0;
+  width: 100%;
+  max-width: 650px;
+  float: left;
+  background: #FAFAFA;
+  border: 1px solid #C3C3C3;
+}
+/*portfolio page*/
+.work {
+  position: relative;
+  width: 274px;
+  overflow: auto;
+  float: left;
+  margin: 18px 0 27px;
+}
+.work:nth-child(even) {
+  margin-right: 36px;
+}
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: .8;
+}
+.work h3 {
+  position: absolute;
+  bottom: 18px;
+  margin-bottom: 0;
+  padding: 18px;
+  width: 100%;
+  color: #FAFAFA;
+  text-align: center;
+  line-height: 27px;
+  font-weight: 300;
+  background: #4AAAA5;
+  border-bottom: 0;
+}
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 9px;
+  margin-right: 27px;
+  float: left;
+}
+/*# sourceMappingURL=assets/css/style-less.css.map */
