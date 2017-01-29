@@ -1,0 +1,25 @@
+{
+  "name": "partialorganization",
+  "version": "1.0.0",
+  "description": "Organizing CSS in partials",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "LESS",
+    "CSS",
+    "Preprocessors",
+    "Portfolio"
+  ],
+  "author": "Latisha McNeel",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

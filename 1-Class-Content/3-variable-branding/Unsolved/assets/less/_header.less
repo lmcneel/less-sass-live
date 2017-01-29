@@ -1,0 +1,46 @@
+/*header*/
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  margin: 0 0 30px;
+  overflow: auto;
+  width: 100%;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
+  width: 250px;
+  height: 90px;
+  float: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav{
+  a {
+    display: inline-block;
+    margin-left: 15px;
+    padding-left: 15px;
+    color: #999;
+    text-decoration: none;
+    line-height: 18px;
+    border-left: 1px solid #efefef;
+  }
+  &:first-child{
+    border-left: 0 none;
+  }
+}
