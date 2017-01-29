@@ -1,0 +1,40 @@
+/* Positions */
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+
+/* Icon Placeholder */
+%growth-icon {
+  &:hover{
+    transition:transform ease 1s;
+    transform:scale(1.5);
+  }
+}
+
+@mixin button($color, $font-color) {
+	@include button-static;
+	background-color: $color;
+	border-color: darken($color, 25%);
+  color: $font-color;
+
+	&:hover {
+		background-color: mix(black, $color, 15%);
+		border-color: mix(black, $color, 40%);
+    color: mix(white, $font-color, 50%);
+	}
+}
+
+@mixin button-static {
+	border: 1px solid;
+	border-radius: 5px;
+	padding: $rem-base/2 $rem-base*1.5;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

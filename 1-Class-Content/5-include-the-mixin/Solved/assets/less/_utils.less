@@ -1,0 +1,31 @@
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+
+.button(@color, @font-color) {
+	.button-static;
+	background-color: @color;
+	border-color: darken(@color, 25%);
+  color: @font-color;
+
+	&:hover {
+		background-color: mix(black, @color, 15%);
+		border-color: mix(black, @color, 40%);
+    color: mix(white, @font-color, 50%);
+	}
+}
+
+ .button-static {
+	border: 1px solid;
+	border-radius: 5px;
+	padding: @rem-base/2 @rem-base*1.5;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

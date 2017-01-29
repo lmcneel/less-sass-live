@@ -1,0 +1,47 @@
+/*header*/
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  margin: 0 0 $rem-base*1.5;
+  overflow: auto;
+  width: 100%;
+  color: $white;
+  background: $white;
+  border-bottom: 2px solid $smoke;
+}
+
+#logo {
+  @extend .left;
+  width: 250px;
+  height: 90px;
+  font-family: $serif-font-family;
+  text-align: center;
+  line-height: 90px;
+  color: $white;
+  font-weight: 700;
+  font-size: $rem-base*1.5;
+  text-decoration: none;
+  background: $brand-primary;
+}
+
+nav {
+  @extend .right;
+  margin-top: $rem-base*1.25;
+}
+
+nav {
+  a{
+    display: inline-block;
+    margin-left: $rem-base;
+    padding-left: $rem-base;
+    color: $oil;
+    text-decoration: none;
+    line-height: $rem-base;
+    border-left: 1px solid $smoke;
+    &:first-child{
+      border-left: 0 none;
+    }
+  }
+
+}
