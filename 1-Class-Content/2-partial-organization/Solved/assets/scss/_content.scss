@@ -1,0 +1,86 @@
+/*sidebar*/
+
+.sidebar {
+  padding: 30px;
+  width: 100%;
+  max-width: 270px;
+  float: right;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3, .sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin: {
+    top: 8px;
+    right: 5px;
+  }
+  &:last-child{
+    margin-right:0;
+  }
+}
+
+/*main*/
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 100%;
+  max-width: 650px;
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+/*portfolio page*/
+
+.work {
+  position: relative;
+  width: 274px;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
+  &:nth-child(even){
+    margin-right: 40px;
+  }
+  img{
+    width: 100%;
+    border: 0 none;
+    opacity: .8;
+  }
+  h3{
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 0;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 300;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+}
+
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+}
