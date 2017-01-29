@@ -63,7 +63,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'assets/css/style-less.min.css': 'assets/css/style-less.less'
+          'assets/css/style-less.min.css': 'assets/less/style-less.less'
         }
       }
     },
